@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  :root {
+    --primary-color: #452e1d;
+    --light-red: #A64135;
+    --primary-black: #111;
+    --gray: #aaa;
+  }
+
+  body{
+    background-color: #fff;
+    color: var(--primary-color);
+    overflow-x: hidden;
+  }
+
+  /* Default Style */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  section .container{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .right{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+  }
+
+  /* Navbar */
+  header{
+    padding: 0 2rem;
+  }
+  
+  nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .logo{
+    font-size: 2rem;
+    color: var(--gray);
+  }
+
+  nav .logo span{
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  nav .links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .links a{
+    font-size: 1.2rem;
+  }
+
+  nav .links a:hover{
+    color:var(--primary-color);
+  }
+
+  /* HERO SECTION */
+  .hero{
+    padding: 5rem 0;
+  }
+
+.hero .left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1{
+    font-size: 4.3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 5.5rem;
+}
+
+.hero h1 span{
+    color: #fd6d06;
+}
+
+.hero p{
+    font-size: 1.125rem;
+    line-height: 2;
+    margin: 2rem 0;
+}
+
+.hero a{
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.hero a:hover{
+    background-color: var(--primary-black);
+}
+
+.hero .img-container{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.hero .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 61% 39% 61% 39%;
+    z-index: 1;
+}
